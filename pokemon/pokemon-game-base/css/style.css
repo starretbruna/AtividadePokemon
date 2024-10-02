@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+/* estilização do site */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+    font-family: sans-serif;
+
+    background-color: black;
+
+    position: relative;
+}
+/* Configurações do fundo do jogo */
+.game {
+    background-image: url(../assets/scene.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 1280px;
+    height: 720px;
+
+    position: relative;
+}
+
+/* posição e largura dos personagens */
+.character {
+    position: absolute;
+    width: 75px;
+}
+
+/* configurações do ash */
+#ash {
+    right: 2px;
+    z-index: 1;
+}
+/* configurações do zubat */
+#zubat {
+    right: 90px;
+    top: 650px;
+}
+/* configurações do pikachu */
+#pikachu {
+    display: none; 
+    right: 600px;
+    top: 330px;
+}
+
+/* configurações do charmander */
+#charmander {
+   display: none; 
+    width: 65px;
+    right: 175px;
+    top: 55px;
+}
+
+/* configurações do volume */
+.music-control {
+    width: 50px;
+    top: 48px;
+    right: 48px;
+    position: absolute;
+
+    cursor: pointer;
+}
+
+/* configurações do reset */
+
+#reset {
+    display: none;
+
+    width: 100px;
+    height: 100px;
+
+    cursor: pointer;
+
+    position: absolute;
+
+    z-index: 3;
+
+}
+
+#reset:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
